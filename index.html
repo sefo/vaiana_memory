@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <script type="text/javascript" src="jquery-1.5.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.5.min.js"></script>
         <script type="text/javascript" src="game.js"></script>
         <title>Vaiana Memory Game</title>
         <style type="text/css">
@@ -20,29 +20,16 @@
                 width: 152px;
                 height: 215px;
                 background: url("card-back.png") no-repeat 0 0;
-
-                          /*margin: 0 5px;
-                padding: 5px;
-                border: 1px solid #999; */
                 cursor: pointer;
-               /*
-				-webkit-border-radius: .5em;
-                -moz-border-radius: .5em;
-                border-radius: .5em;
-                -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.5);
-                -moz-box-shadow: 0 1px 2px rgba(0,0,0,.5);
-                box-shadow: 0 1px 2px rgba(0,0,0,.5);
-				*/
                 z-index: 2;
             }
 
             #boxcard div img {
                 border: none;
                 z-index: 3;
-                                height: 215px;
-                                margin-left: 1px;
-/*                              margin-top: 7px; */
-                                width: 150px;
+                height: 215px;
+                margin-left: 1px;
+                width: 150px;
             }
 
             .opacity {
@@ -68,30 +55,22 @@
                 background: #999;
             }
             #msg {
-                                position: absolute;
-                                top: 37%;
-                                left: 175px;
-                                text-indent: -9999px;
-                                z-index: 1;
-                        }
-                        #msg a {
-                                background: url("play-again.png") no-repeat 0 0;
-                                display: block;
-                                height: 151px;
-                                width: 334px;
-                        }
+                    position: absolute;
+                    top: 37%;
+                    left: 175px;
+                    text-indent: -9999px;
+                    z-index: 1;
+            }
+            #msg a {
+                    background: url("play-again.png") no-repeat 0 0;
+                    display: block;
+                    height: 151px;
+                    width: 334px;
+            }
 
         </style>
     </head>
     <body>
-<!--        <div id="boxbutton">
-            <span class="link">
-                <span id="count">0</span>
-                Clicks
-            </span>
-            &nbsp;
-            <a href="javascript:" class="link" onclick="resetGame();">Reset</a>
-        </div>-->
 <span class="congrats"></span>
         <div id="boxcard">
             <div id="card1"><img src="01.png" /></div>
@@ -121,4 +100,3 @@
         </div>
     </body>
 </html>
-
