@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="jquery-1.5.min.js"></script>
+        <script type="text/javascript" src="game.js"></script>
+        <title>Vaiana Memory Game</title>
+        <style type="text/css">
+            * {
+                font-family: Arial, "Free Sans";
+            }
+
+            #boxcard {
+                margin: 0 auto;
+                z-index: 1;
+            }
+
+            #boxcard div {
+                float: left;
+                width: 152px;
+                height: 215px;
+                background: url("card-back.png") no-repeat 0 0;
+
+                          /*margin: 0 5px;
+                padding: 5px;
+                border: 1px solid #999; */
+                cursor: pointer;
+               /*
+				-webkit-border-radius: .5em;
+                -moz-border-radius: .5em;
+                border-radius: .5em;
+                -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.5);
+                -moz-box-shadow: 0 1px 2px rgba(0,0,0,.5);
+                box-shadow: 0 1px 2px rgba(0,0,0,.5);
+				*/
+                z-index: 2;
+            }
+
+            #boxcard div img {
+                border: none;
+                z-index: 3;
+                                height: 215px;
+                                margin-left: 1px;
+/*                              margin-top: 7px; */
+                                width: 150px;
+            }
+
+            .opacity {
+                opacity: .6;
+                filter: alpha(opacity=60);
+            }
+
+            #boxbutton {
+                text-align: center;
+                padding: 20px;
+            }
+            .link {
+                font-size: 18px;
+                color: #ffffff;
+                text-decoration: none;
+                background: #0066cc;
+                padding: 5px 10px;
+                -webkit-border-radius: .5em;
+                -moz-border-radius: .5em;
+                border-radius: .5em;
+            }
+            .link:hover {
+                background: #999;
+            }
+            #msg {
+                                position: absolute;
+                                top: 37%;
+                                left: 175px;
+                                text-indent: -9999px;
+                                z-index: 1;
+                        }
+                        #msg a {
+                                background: url("play-again.png") no-repeat 0 0;
+                                display: block;
+                                height: 151px;
+                                width: 334px;
+                        }
+
+        </style>
+    </head>
+    <body>
+<!--        <div id="boxbutton">
+            <span class="link">
+                <span id="count">0</span>
+                Clicks
+            </span>
+            &nbsp;
+            <a href="javascript:" class="link" onclick="resetGame();">Reset</a>
+        </div>-->
+<span class="congrats"></span>
+        <div id="boxcard">
+            <div id="card1"><img src="01.png" /></div>
+            <div id="card2"><img src="02.png" /></div>
+            <div id="card3"><img src="03.png" /></div>
+            <div id="card4"><img src="04.png" /></div>
+            <div id="card5"><img src="05.png" /></div>
+            <div id="card6"><img src="06.png" /></div>
+            <div id="card7"><img src="07.png" /></div>
+            <div id="card8"><img src="08.png" /></div>
+            <div id="card9"><img src="09.png" /></div>
+            <div id="card10"><img src="10.png" /></div>
+            <div id="card11"><img src="11.png" /></div>
+            <div id="card12"><img src="12.png" /></div>
+            <div id="card13"><img src="01.png" /></div>
+            <div id="card14"><img src="02.png" /></div>
+            <div id="card15"><img src="03.png" /></div>
+            <div id="card16"><img src="04.png" /></div>
+            <div id="card17"><img src="05.png" /></div>
+            <div id="card18"><img src="06.png" /></div>
+            <div id="card19"><img src="07.png" /></div>
+            <div id="card20"><img src="08.png" /></div>
+            <div id="card21"><img src="09.png" /></div>
+            <div id="card22"><img src="10.png" /></div>
+            <div id="card23"><img src="11.png" /></div>
+            <div id="card24"><img src="12.png" /></div>
+        </div>
+    </body>
+</html>
+
